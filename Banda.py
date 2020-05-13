@@ -5,43 +5,43 @@ class instrumento:
     def preparar(self):
         return("Preparando instrumento")
 class guitarra(instrumento):
-    nombre = 'guitarra'
+    nombre = 'Guitarra'
     def __init__(self):
         self = self
 class bajo(instrumento):
-    nombre = 'bajo'
+    nombre = 'Bajo'
     def __init__(self):
         self = self        
 class piano(instrumento):
-    nombre = 'piano'
+    nombre = 'Piano'
     def __init__(self):
         self = self
 class caja (instrumento):
-    nombre = 'caja'
+    nombre = 'Caja'
     def __init__(self):
         self = self
 class flauta (instrumento):
-    nombre = 'flauta'
+    nombre = 'Flauta'
     def __init__(self):
         self = self
 class acordeon (instrumento):
-    nombre = 'acordeon'
+    nombre = 'Acordeon'
     def __init__(self):
         self = self
 class gaita (instrumento):
-    nombre = 'gaita'
+    nombre = 'Gaita'
     def __init__(self):
         self = self
 class guacharaca (instrumento):
-    nombre = 'guacharaca'
+    nombre = 'Guacharaca'
     def __init__(self):
         self = self
 class llamador (instrumento):
-    nombre = 'llamador'
+    nombre = 'Llamador'
     def __init__(self):
         self = self
 class bateria (instrumento):
-    nombre = 'bateria'
+    nombre = 'Bateria'
     def __init__(self):
         self = self        
 class banda():
@@ -52,24 +52,33 @@ class banda():
             ins = randint(1,4)
             obj =instrumentos[ins]
             banda.append(obj)
-        print(-Ba)
+        j = 1
         for i in banda:
-
+            print("Instrumento",j," : ",i.nombre)
+            j = j+1
         return banda
     def afinarbanda(self, banda, numeromusicos ):
+        j = 1
         for i in banda:
-            print(i.preparar(),i.nombre)
+            print(i.preparar()," ",j," :",i.nombre)
+            j = j+1
     def tocarbanda(self, banda, numeromusiscos):
-        print("Tocando")
-           
-numeromusicos = randint(1,10)
+        j = 1
+        for i in banda:
+            print(i.tocar()," ",j," :",i.nombre)
+            j = j+1
 banda = banda()
-b = banda.nuevabanda(numeromusicos)
-print("Afinar")
-banda.afinarbanda(b,numeromusicos)
-
-
-
-
-
-
+numero = 0
+b = []
+while numero != 4:
+    numeromusicos = randint(5,10)
+    print("1. Crear Nueva Banda"+"\n"+"2. Afinar Banda"+"\n"+"3. Tocar Serenata"+"\n"+"4. Salir")
+    numero = int(input("Seleccione: "))
+    if(numero == 1):
+        print("Numero de Musicos: ", numeromusicos)
+        b = banda.nuevabanda(numeromusicos)
+    if(numero == 2):
+        banda.afinarbanda(b,numeromusicos)
+    if(numero == 3):
+        banda.tocarbanda(b,numeromusicos)
+print("Gracias por su colaboración")
