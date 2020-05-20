@@ -1,17 +1,25 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template, session, request
 from NuevaBanda import nuevabanda
 app = Flask(__name__)
-banda = nuevabanda()
-can = len(banda)
+app.secret_key = 'esto-es-una-clave-muy-secreta'
+b = nuevabanda()
 @app.route('/')
 def index():
-    return render_template('index.html', banda=banda, can = can)
+    session['BandaSesion'] = nuevabanda()
+    b = session['BandaSesion']
+    return render_template('index.html', b = b)
+@app.route('/banda')
+def Banda():
+    session['BandaSesion'] = nuevabanda()
+    b = session['BandaSesion']
+    return render_template('Instrumento.html', b = b)
 @app.route('/preparar')
 def preparar():
-    return render_template('preparar.html', banda=banda)
+    b = session['BandaSesion']
+    return render_template('preparar.html', b = b)
 @app.route('/tocar')
 def tocar():
-    return render_template('tocando.html', banda=banda)
+    return render_template('tocando.html', b = b)
 if __name__ == '__main__':
       app.run(debug = True, port = 5000 )

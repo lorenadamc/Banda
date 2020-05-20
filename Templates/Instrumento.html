@@ -6,14 +6,20 @@
     <title> {% block title %} {%endblock%} </title>
 </head>
 <body>
+    <h2> Banda : </h2>
+    {% for i in b %}
+      <p>Instrumento: {{ i }}</p>        
+    {% endfor %}
+
     {% block  content%}    
     {% endblock %}
 
+
     <button onclick="location.href='preparar'">Afinar Banda</button>
     <button onclick="location.href='tocar'">Tocar Banda</button>
-    <button onclick="location.href='/'">Tocar Banda</button>
+    <button onclick="location.href='banda'">Nueva Banda</button>
 
 
 
-</body>
+</body> 
 </html>

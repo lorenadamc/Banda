@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preparar Banda</title>
-</head>
-<body>
-    {%for i in banda%}
-        <p> Preparando: {{ i }}</p>
-    {%endfor%}
-    <button onclick="location.href='tocar'">Tocar Banda</button>
-</body>
-</html>
+{% extends '/Instrumento.html' %}
+
+{% block title %}
+    Tocando
+{% endblock %}
+
+{% block content %}
+    <h1> Preparando Banda</h1>
+    {% for i in b %}
+        <p> Preparando: {{ i }} </p>
+    {% endfor %}
+{% endblock %}
