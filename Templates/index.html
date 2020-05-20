@@ -4,13 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Instrumentos</title>
-  <style>
-
-  </style>
 </head>
 <body>
+  <h2> Banda : </h2>
     {% for i in banda %}
-        <p>Intrumentos:  {{ i }}</p>
+      <p>Instrumento: {{ i }}</p>        
     {% endfor %}
 
     <button onclick="location.href='preparar'">Afinar Banda</button>

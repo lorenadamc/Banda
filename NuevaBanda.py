@@ -1,7 +1,7 @@
 from random import randint, uniform,random
 def nuevabanda():
         r = randint(5,10)
-        instrumentos = ["guitarra","bajo","piano","caja","flauta","acordeon","gaita","guacharaca","llamador","bateria"]
+        instrumentos = ["Guitarra","Bajo","Piano","Caja","Flauta","Acordeon","Gaita","Guacharaca","Llamador","Bateria"]
         banda = []
         for i in range(0,r):
             ins = randint(0,9)

@@ -1,0 +1,11 @@
+{% extends '/Base/Instrumento.html' %}
+
+{% block title %}
+    Tocando
+{% endblock %}
+
+{% block content %}
+    {% for i in banda %}
+        <p> Tocando: {{ i }} </p>
+    {% endfor %}
+{% endblock %}
