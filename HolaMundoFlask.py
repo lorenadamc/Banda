@@ -12,7 +12,6 @@ def preparar():
     return render_template('preparar.html', banda=banda)
 @app.route('/tocar')
 def tocar():
-    lista = ["Guacha","da","dsa"]
     return render_template('tocar.html', banda=banda)
 if __name__ == '__main__':
       app.run(debug = True, port = 5000 )
