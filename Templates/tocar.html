@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instrumentos</title>
+    <title>Tocar Banda</title>
 </head>
 <body>
-    {% block tocar %}   
-    {% endblock %}
+    {%for i in banda%}
+        <p> Tocando: {{ i }}</p>
+    {%endfor%}
+    <button onclick="location.href='/'">Nueva Banda</button>
+    
 </body>
 </html>

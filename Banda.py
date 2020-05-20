@@ -7,43 +7,43 @@ class instrumento:
 class guitarra(instrumento):
     nombre = 'Guitarra'
     def __init__(self):
-        self = self
+        pass
 class bajo(instrumento):
     nombre = 'Bajo'
     def __init__(self):
-        self = self        
+        pass
 class piano(instrumento):
     nombre = 'Piano'
     def __init__(self):
-        self = self
+        pass
 class caja (instrumento):
     nombre = 'Caja'
     def __init__(self):
-        self = self
+        pass
 class flauta (instrumento):
     nombre = 'Flauta'
     def __init__(self):
-        self = self
+        pass
 class acordeon (instrumento):
     nombre = 'Acordeon'
     def __init__(self):
-        self = self
+        pass
 class gaita (instrumento):
     nombre = 'Gaita'
     def __init__(self):
-        self = self
+        pass
 class guacharaca (instrumento):
     nombre = 'Guacharaca'
     def __init__(self):
-        self = self
+        pass
 class llamador (instrumento):
     nombre = 'Llamador'
     def __init__(self):
-        self = self
+        pass
 class bateria (instrumento):
     nombre = 'Bateria'
     def __init__(self):
-        self = self        
+        pass
 class banda():
     def nuevabanda(self,numeromusicos):
         instrumentos = [guitarra(),bajo(),piano(),caja(),flauta(),acordeon(),gaita(),guacharaca(),llamador(),bateria()]

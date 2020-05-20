@@ -1,7 +1,19 @@
-{%extends 'Base/Instrumento.html'%}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instrumentos</title>
+  <style>
 
-{%block tocar%}
-    {% for i in lista%}
-    {{ i }}
+  </style>
+</head>
+<body>
+    {% for i in banda %}
+        <p>Intrumentos:  {{ i }}</p>
     {% endfor %}
-{%endblock%}
+
+    <button onclick="location.href='preparar'">Afinar Banda</button>
+    <button onclick="location.href='tocar'">Tocar Band</button>
+</body>
+</html
