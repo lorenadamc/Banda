@@ -1,13 +1,24 @@
 h1{
-    color: blue
+    color: #6c2eb9;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: Arial;
+    text-transform: uppercase;  
+}
+h4{
+    color: #4f4866;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Arial;
 }
 button{
-    background:    #53d1a8;
-    border:        1px solid #556699;
+    background:    #eeeeee;
+    background:    linear-gradient(#eeeeee, #a3f1a3);
     border-radius: 1000px;
-    padding:       15px 45px;
+    padding:       20px 30px;
     color:         #ffffff;
     display:       inline-block;
-    font:          normal bold 24px/1 "Open Sans", sans-serif;
+    font:          normal bold 25px/1 "Calibri", sans-serif;
     text-align:    center;
+    text-shadow:   1px 1px #000000;
 }
