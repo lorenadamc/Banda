@@ -7,19 +7,19 @@ banda = nuevabanda()
 @app.route('/')
 def index():
     session['BandaSesion'] = nuevabanda()
-    b = session['BandaSesion']
-    return render_template('index.html', banda = b)
+    banda = session['BandaSesion']
+    return render_template('index.html', banda = banda)
 @app.route('/banda')
 def Banda():
     session['BandaSesion'] = nuevabanda()
-    b = session['BandaSesion']
-    return render_template('Instrumento.html', banda = b)
+    banda= session['BandaSesion']
+    return render_template('Instrumento.html', banda = banda)
 @app.route('/preparar')
 def preparar():
-    b = session['BandaSesion']
-    return render_template('preparar.html', banda = b)
+    banda = session['BandaSesion']
+    return render_template('preparar.html', banda = banda)
 @app.route('/tocar')
 def tocar():
-    return render_template('tocando.html', banda = b)
+    return render_template('tocando.html', banda = banda)
 if __name__ == '__main__':
       app.run(debug = True, port = 5000 )
