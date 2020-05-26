@@ -20,6 +20,7 @@ def preparar():
     return render_template('preparar.html', banda = banda)
 @app.route('/tocar')
 def tocar():
+    banda = session['BandaSesion']
     return render_template('tocando.html', banda = banda)
 if __name__ == '__main__':
       app.run(debug = True, port = 5000 )

@@ -1,14 +1,5 @@
 from random import randint, uniform,random
-from Guitarra import guitarra
-from Bajo import bajo
-from Piano import piano
-from Caja import caja
-from Flauta import flauta
-from Acordeon import acordeon
-from Gaita import gaita
-from Guacharaca import guacharaca
-from Llamador import llamador
-from Bateria import bateria
+from Instrumento import *
 class banda():
     def nuevabanda(self,numeromusicos):
         instrumentos = [guitarra(),bajo(),piano(),caja(),flauta(),acordeon(),gaita(),guacharaca(),llamador(),()]
