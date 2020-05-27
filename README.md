@@ -1,4 +1,4 @@
-Banda Aleatoria
+# Banda Aleatoria
 
 _Programa para la creación de una banda aleatoria entre 1 a 10 musicos. Este programa permite afinar o tocar los instrumentos, asi como, realizar distintas bandas aleatorias._
 
@@ -6,8 +6,9 @@ _Programa para la creación de una banda aleatoria entre 1 a 10 musicos. Este pr
 
 _Este programa se realizó con Flask en Pytho, por lo que es necesario tener, al menos, Python 2.6 o Python 3 instalado._
 
-```
 ![alt text](https://blogs.masterhacks.net/wp-content/uploads/2020/01/masterhacks_fin_vida_python_2.7.jpeg)
+```
+
 ```
 
 ### Instalación 🔧
