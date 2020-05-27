@@ -51,13 +51,29 @@ _Dentro del entorno virtual realizaremos la instalación de Flask._
 
 ## Principios de Diseño ⚙️
 
-### The Open Closed Principle
+### The Open Closed Principle (OCP)
 
 _Un módulo debe estar abierto para extensión pero cerrado para la modificación._
 
 Esto significa que el comportamiento de un módulo puede ser extendido. Cuando los requerimientos de una aplicación cambien, debemos ser capaces de extender el módulo con nuevos comportamientos que satisfagan esos cambios, es decir, debemos ser capaces de cambiar lo que el módulo hace.
 
 Eso pasa en las clases acordeon, guitarra, etc... que hereda de la clase instrumento.
+
+### The Liskov Substitution Principle (LSP)
+
+_las subclases deben ser sustituibles por sus clases base._
+
+El principio define que los objetos de una superclase serán reemplazables por objetos de sus subclases sin interrumpir la aplicación. Eso requiere que los objetos de sus subclases se comporten de la misma manera que los objetos de su superclase.
+
+Este principio se da entre las subclases acordeon, guitarra, etc... que pueden reemplazar la clase Instrumentos ya que posee los mismos metodos.
+
+### The Dependency Inversion Principle (DIP)
+
+_Depende de las abstracciones. No depende de las concreciones._
+
+Los módulos de alto nivel, que proporcionan una lógica compleja, deberían ser fácilmente reutilizables y no verse afectados por los cambios en los módulos de bajo nivel, que proporcionan funciones de utilidad. Para lograrlo, debe introducir una abstracción que desacople los módulos de alto y bajo nivel entre sí.
+
+Esta se ve aplicada en la clase Instrumentos a Banda.
 
 ## Autores ✒️
 
