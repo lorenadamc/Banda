@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<center>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <title> {% block title %} {%endblock%} </title>
 </head>
+</center>
+<center>
 <body>
-    <h2> Banda : </h2>
-    {% for i in banda %}
-        <p>Instrumento: {{ i }}</p>        
+    <h4> Banda: </h4>
+    <table>
+      <tbody>
+        <tr>
+        {% for i in banda %}
+          <td>{{ i }}</td>
+          {% endfor %}
+      </tr>
+      <tr>
+        {% for i in banda %}
+            <td><img src="static/imagenes/{{ i }}.png" alt="{{ i }}" height="120px" width="120px"/></td>
     {% endfor %}
-
-    {% block  content%}    
+    </tr>
+  </tbody>
+</table>
+    {% block  content%}
     {% endblock %}
-
-
-    <button onclick="location.href='preparar'">Afinar Banda</button>
-    <button onclick="location.href='tocar'">Tocar Banda</button>
-    <button onclick="location.href='banda'">Nueva Banda</button>
-
-
-
-</body> 
+    <button onclick="location.href='preparar'"style="margin-left: 20px">Afinar Banda</button>
+    <button onclick="location.href='tocar'"style="margin-left: 20px">Tocar Banda</button>
+    <button onclick="location.href='banda'"style="margin-left: 20px">Nueva Banda</button>
+</body>
+</center>
 </html>

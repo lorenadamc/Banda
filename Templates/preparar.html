@@ -3,10 +3,21 @@
 {% block title %}
     Preparando
 {% endblock %}
-
 {% block content %}
-    <h1> Preparando Banda</h1>
-    {% for i in banda    %}
-        <p> Preparando: {{ i }} </p>
+<h1>Preparando Banda</h1>
+<table>
+    <tbody>
+    <tr>
+    {% for i in banda %}
+        <td>{{ i }}</td>
     {% endfor %}
+    </tr>
+    <tr>
+    {% for i in banda %}
+        <td><img src="static/imagenes/{{ i }}.png" alt="{{ i }}" height="120px" width="120px"/></td>
+    {% endfor %}
+    </tr>
+</tbody>
+</table>
+
 {% endblock %}

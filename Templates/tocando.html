@@ -4,9 +4,21 @@
     Tocando
 {% endblock %}
 
+
 {% block content %}
-    <h1>Tocando Banda</h1>
+<h1>Tocando Banda</h1>
+<table>
+    <tbody>
+    <tr>
     {% for i in banda %}
-        <p> Tocando: {{ i }} </p>
+        <td>{{ i }}</td>
     {% endfor %}
+    </tr>
+    <tr>
+    {% for i in banda %}
+        <td><img src="static/imagenes/{{ i }}.png" alt="{{ i }}" height="120px" width="120px"/></td>
+    {% endfor %}
+    </tr>
+</tbody>
+</table>
 {% endblock %}
