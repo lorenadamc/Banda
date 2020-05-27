@@ -51,7 +51,13 @@ _Dentro del entorno virtual realizaremos la instalación de Flask._
 
 ## Principios de Diseño ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+### The Open Closed Principle
+
+_Un módulo debe estar abierto para extensión pero cerrado para la modificación._
+
+Esto significa que el comportamiento de un módulo puede ser extendido. Cuando los requerimientos de una aplicación cambien, debemos ser capaces de extender el módulo con nuevos comportamientos que satisfagan esos cambios, es decir, debemos ser capaces de cambiar lo que el módulo hace.
+
+Eso pasa en las clases acordeon, guitarra, etc... que hereda de la clase instrumento.
 
 ## Autores ✒️
 
