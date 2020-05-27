@@ -20,8 +20,7 @@ _Puede ser que para la instalación necesites ser administrador. En ese caso eje
 ```
 $ sudo pip install Flask
 ```
-_Flask con virtualenv
-Una buena práctica dentro del mundo Python es ejecutar el código dentro de un entorno virtual o virtualenv. Dentro del entorno virtual podremos trabajar con diferentes versiones de Python y de las librerías que estemos utilizando._
+_Dentro del entorno virtual podremos trabajar con diferentes versiones de Python y de las librerías que estemos utilizando._
 
 _Para instalar virtualenv deberás de ejecutar lo siguiente_
 
