@@ -7,27 +7,48 @@ _Programa para la creación de una banda aleatoria entre 1 a 10 musicos. Este pr
 _Este programa se realizó con Flask en Pytho, por lo que es necesario tener, al menos, Python 2.6 o Python 3 instalado._
 
 ![alt text](https://blogs.masterhacks.net/wp-content/uploads/2020/01/masterhacks_fin_vida_python_2.7.jpeg)
-```
-
-```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+_Para instalar Flask vamos a utilizar pip. Así que simplemente deberemos de escribir en nuestra línea de comandos lo siguiente:_
 
 ```
-Da un ejemplo
+$ pip install Flask
+```
+_Puede ser que para la instalación necesites ser administrador. En ese caso ejecuta:_
+
+```
+$ sudo pip install Flask
+```
+_Flask con virtualenv
+Una buena práctica dentro del mundo Python es ejecutar el código dentro de un entorno virtual o virtualenv. Dentro del entorno virtual podremos trabajar con diferentes versiones de Python y de las librerías que estemos utilizando._
+
+_Para instalar virtualenv deberás de ejecutar lo siguiente_
+
+```
+$ pip install virtualenv
+```
+_Una vez instalado virtualenv deberás de crear un directorio para tu proyecto._
+
+```
+$ mkdir miproyecto $ cd miproyecto
+```
+_Ahora creamos el entorno virtual del proyecto:_
+
+```
+$ virtualenv mientornovirtual
 ```
 
-_Y repite_
+_Se suele utilizar venv como nombre de los entornos virtuales. Ahora tenemos que saber hacer dos cosas. Por un lado activar el entorno virtual:_
+```
+$ . mientornovirtual/bin/activate
+```
+_Y desactivarlo una vez acabemos de utilizarlo_
 
 ```
-hasta finalizar
+$ deactivate
 ```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Dentro del entorno virtual realizaremos la instalación de Flask._
 
 ## Principios de Diseño ⚙️
 
